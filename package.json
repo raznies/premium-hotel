@@ -1,0 +1,12 @@
+{
+  "name": "premium-hotel",
+  "version": "1.0.0",
+  "description": "Mandeva Wooden Castle - Luxury Mountain Retreat",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Static site - no build required'"
+  },
+  "keywords": ["hotel", "luxury", "mountain", "retreat"],
+  "author": "raznies",
+  "license": "MIT"
+}
