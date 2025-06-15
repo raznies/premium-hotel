@@ -1,0 +1,54 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--access-token",
+        "sbp_64d4c2c6c549ccb7e7b4ce7c469edc0a9535e570"
+      ]
+    },
+    "firecrawl-mcp": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-43da03b431de42478bebd05c7be8dd94"
+      }
+    },
+    "Puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+      "env": {}
+    },
+    "firebase": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-firebase"],
+      "env": {
+        "FIREBASE_PROJECT_ID": "college-letters",
+        "FIREBASE_CLIENT_EMAIL": "firebase-adminsdk-fbsvc@college-letters.iam.gserviceaccount.com",
+        "FIREBASE_PRIVATE_KEY": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDZhQ5dCLPKpF3b\nmXOQrvAnW/ZmDE1nP8YWhCzEtli0yUmjjXlSxCV2FqJ6362ynyUIQNPzCce6HTcA\nt7znrZdfrxZrDGgxXkzMZXtt6+PEy5eazoEz3rbmfb9ssxuGioOgskQwdHeuGLmg\nMIIxIgckLsVr/AAL+nkVt6dnjTFyfbDqrVvqG7FS4+su40cEkhota1X2GqmgPPlb\nrfFI3aDzE93McGrSMKfSRJhyisIKdp2wcGvt6n7B9rsicrtgF4Jt/RCSzHugkGIF\n42lLZMPPDDixpnoQd3RCC4pjD6wfjXb/yo/2AJM7VNdo1UihKlOJ3PBFYP28IsSH\nvYuSDwPtAgMBAAECggEAHPQgltKnN/SMB8STxPD8R4juseO2U+WBxRJ/8QlCooHe\nmvYkbZdtUxwtMYTflpSndcNHUyT8oHHuFdrfOsl5CkQAjGxA3D1spJJnjRimn1Xo\nTrNpMFHXb7PSTLJEmjKK1dOUzwxZt+NTphZ+5fJdF/xfzAFlsjJ7dqAVGOwK5m3E\nukPBeeyoImQSBMN6OVzksPQlw1bivq6fZtktZscXzLiyjRrf5NN3hn3V2Lj7a8/4\nufZ4f5Aa9DgxjT8OVWWnYzx6vBbjz9tSiE5bZi3q6rZhoeKh5SVr0FnFeJ4mRwCZ\nP94XU2Dc/6/FO+YG3uNevpo5fLo9ovsOn3JGRZRh8wKBgQD5JrM0JzB5TlqdZnLa\njvyG+5FWRBUUfCHi23tvovaorshpnmTNIOHtGR8zgyhXmjgRb7P9ATHdze4TLLlU\nDtrdZ4UdJIrhf1vwAiQGWVzsV6sequ/vFiFE3hdWE/P1mJX0N1NsOf5ZC7Y9ZJbe\nEpNHUhf85Y9Mp1ZhxOdsJpWzKwKBgQDff8NJLmUMDlT3xk/Kj9/3Ll02kqWEEwfC\n1gv3wJ83bMNTBlAjk/NwM0JKSYaYXvozKQiLGIvj5YwWxa5/yxT5ohCnXSETLL+j\nBMrp2ReGN9Jd/5qCW00iDzM66kWUAwfg6VKr5p0TPgzE15YQnSr95dYOiRKq9MLy\nsENuJRF5RwKBgQDvr1pAdt78I/Oqbm9ZcKrhFExZ5/87iLt0qV7TI7wUxKhKazVf\n3R1bYYqRnMCHnfYIWCSX5blaPwykZ6cWhX/p9Peq9IeirUn916FedkOdni0hwKI3\nqFtzDBD5HxLXluXTXhIkEJpugYTdBNLaapZCy2gGQ7UasfS485sKgQgMpwKBgD8/\nNpJVEL9SpvTfJ+FYybZ3ZmV1JmWzxPR8AjMATY4vty6dkLwguDk+KDpBiFdCOWeU\n6xgBwESjxvsCwhjj7XGfTTsvfZahiTGmv41ho+iVj3COTrkpATDsQEEh3sK+ANLC\n9GQ1BKpXWuGxaIQXFf13txWx8Jh0X16yRsK6trEtAoGARATZ9M9yuvw2evG8lMrR\nob1ujf+UC7d3TeTm9xiR+hdXm8XyS37F4S6+Ngklzh7ToPa1OGTFJq6GGmHvqIrR\npQ1XLzls1AXUFpi59MEYx5GRJBGjMpqQgyikiBH3X3diXLG3FA7FR+T5coMAzohn\nI/lxGvRz84D8RoCdet+XPDc=\n-----END PRIVATE KEY-----\n"
+      }
+    },
+    "appwrite": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-appwrite",
+        "--users"
+      ],
+      "env": {
+        "APPWRITE_API_KEY": "standard_e7dacb7caefaa5ad37fea0c254bf0341dbb12201003e1e0da0583180a275cc04a3bde868f1e2a6a41a40a071a344fdc430f3ee12f4369f1d901961f22873a5c68118a9c1f8974590247bfe57f916a2e34c6db916ef17373826a0af5fd4a24d40efadba232405d64ef97b05ae4b9ff2a42fe9799d801ad069be5c3007f8ad6b0b",
+        "APPWRITE_PROJECT_ID": "6838370300271d1ab344",        "APPWRITE_ENDPOINT": "https://<REGION>.cloud.appwrite.io/v1"
+      }
+    },
+    "taskmaster-ai": {
+      "command": "npx",
+      "args": ["-y", "--package=task-master-ai", "task-master-ai"],
+      "env": {
+        "GOOGLE_API_KEY": "AIzaSyB_jkJ_dMMOv67FbzwT2dM5m1T_WW0L8rM"
+      }
+    }
+  }
+}
