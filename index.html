@@ -702,6 +702,84 @@
         </div>
     </section>
 
+    <!-- Development Notice Card -->
+    <section class="py-16 bg-gradient-to-r from-castle-gold to-yellow-400 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/10"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/20 p-8 md:p-12 text-center">                    <!-- Icon -->
+                    <div class="inline-block p-4 bg-gradient-to-r from-castle-gold to-yellow-500 rounded-full mb-6">
+                        <i class="fas fa-magic text-3xl text-white"></i>
+                    </div>
+                      <!-- Title -->
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-castle-brown mb-6">
+                        🎨 Website Customize Kar Sakte Hai!
+                    </h2>
+                    
+                    <!-- Content -->
+                    <div class="space-y-4 text-gray-700 text-lg leading-relaxed">
+                        <p class="font-semibold text-xl text-castle-brown">
+                            Is website mein jo bhi chahiye, sab kuch change ho sakta hai! 💯
+                        </p>
+                        
+                        <div class="grid md:grid-cols-3 gap-6 mt-8">
+                            <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-6">
+                                <i class="fas fa-paint-brush text-2xl text-indigo-600 mb-3"></i>
+                                <h3 class="font-heading text-lg font-semibold text-castle-brown mb-2">Design Badalna</h3>
+                                <p class="text-sm text-gray-600">Colors, layout, fonts - sab kuch apne hisab se kar sakte hai</p>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-green-50 to-emerald-100 rounded-xl p-6">
+                                <i class="fas fa-plus-circle text-2xl text-emerald-600 mb-3"></i>
+                                <h3 class="font-heading text-lg font-semibold text-castle-brown mb-2">Naye Features</h3>
+                                <p class="text-sm text-gray-600">Booking system, photo gallery, contact form - jo chahiye add kar denge</p>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-purple-50 to-violet-100 rounded-xl p-6">
+                                <i class="fas fa-file-alt text-2xl text-violet-600 mb-3"></i>
+                                <h3 class="font-heading text-lg font-semibold text-castle-brown mb-2">Naye Pages</h3>
+                                <p class="text-sm text-gray-600">About us, services, menu - koi bhi page add kar sakte hai</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 p-6 bg-gradient-to-r from-amber-50 to-orange-100 rounded-xl border border-amber-200">
+                            <p class="text-castle-brown font-medium text-center">
+                                <i class="fas fa-lightbulb text-amber-500 mr-2"></i>
+                                <span class="text-lg">Koi bhi idea hai? Batao, hum bana denge! 🚀</span>
+                            </p>
+                            <p class="text-sm text-gray-600 mt-2 text-center">
+                                Business ke liye perfect website chahiye? Bilkul kar sakte hai!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Call-to-Action -->
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <button class="luxury-btn bg-gradient-to-r from-castle-brown to-amber-700 hover:from-amber-700 hover:to-castle-brown text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            <i class="fas fa-comments mr-2"></i>
+                            Baat Karte Hai
+                        </button>
+                        <button class="bg-white border-2 border-castle-gold text-castle-brown px-8 py-4 rounded-full font-semibold text-lg hover:bg-castle-gold hover:text-white transition-all duration-300 transform hover:scale-105">
+                            <i class="fas fa-envelope mr-2"></i>
+                            Developer ko Contact
+                        </button>
+                    </div>
+                    
+                    <!-- Note -->
+                    <p class="mt-6 text-sm text-gray-500 italic">
+                        Ye demo website hai - dikhane ke liye banaya hai ki kya-kya kar sakte hai
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative Elements -->
+        <div class="absolute top-4 left-4 w-16 h-16 bg-white/20 rounded-full animate-pulse"></div>
+        <div class="absolute bottom-4 right-4 w-24 h-24 bg-white/10 rounded-full animate-pulse"></div>
+        <div class="absolute top-1/2 left-8 w-8 h-8 bg-white/30 rounded-full"></div>
+        <div class="absolute top-1/4 right-12 w-12 h-12 bg-white/20 rounded-full"></div>
+    </section>
+
     <!-- Rooms Section -->
     <section id="rooms" class="py-20 bg-gradient-to-b from-warm-beige to-white">
         <div class="container mx-auto px-6">
@@ -1564,7 +1642,7 @@
                 e.preventDefault();
                 handleInteraction();
             });
-        });// Magnetic Button Effect (disabled on mobile for touch)
+        };// Magnetic Button Effect (disabled on mobile for touch)
         if (window.innerWidth > 768) {
             document.querySelectorAll('.magnetic-btn').forEach(btn => {
                 btn.addEventListener('mousemove', (e) => {
