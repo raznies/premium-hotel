@@ -1642,7 +1642,7 @@
                 e.preventDefault();
                 handleInteraction();
             });
-        };// Magnetic Button Effect (disabled on mobile for touch)
+        });// Magnetic Button Effect (disabled on mobile for touch)
         if (window.innerWidth > 768) {
             document.querySelectorAll('.magnetic-btn').forEach(btn => {
                 btn.addEventListener('mousemove', (e) => {
